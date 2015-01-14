@@ -6,7 +6,7 @@ default: &default
 development:
   <<: *default
   adapter: postgresql
-  database: db/development.pg
+  database: db/development.postgresql
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
