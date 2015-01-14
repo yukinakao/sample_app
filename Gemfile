@@ -8,9 +8,9 @@ gem 'rails', '4.2.0'
 # -gem 'sqlite3'
 # +gem 'sqlite3', groups: %w(test development),require :false
 # +gem 'pg', groups: %w(production),require: false
-group :development, :test do
-	gem 'sqlite3'
-	#gem 'pg'
+group :development, :test, :production do
+	#gem 'sqlite3'
+	gem 'pg'
 end
 
 # Use SCSS for stylesheets
@@ -69,7 +69,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 #Added script by myself from this comment
 
 group :production do
-	gem 'pg'
+	#gem 'pg'
 	gem 'rails_12factor'
 end
 
