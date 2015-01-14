@@ -7,9 +7,9 @@ development:
   <<: *default
   adapter: postgresql
   database: db/development.postgresql
-  username: bedbkxosndnppp
-  password: eAg2OyZ5PaE5ft7AnYbVe0evGR
-#  host: ec2-54-197-241-79.compute-1.amazonaws.com
+  username: testuser
+  password: testpass
+  host: localhost
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -19,14 +19,14 @@ test:
   <<: *default
   adapter: postgresql
   database: db/test.postgresql
-  username: bedbkxosndnppp
-  password: eAg2OyZ5PaE5ft7AnYbVe0evGR
-#  host: ec2-54-197-241-79.compute-1.amazonaws.com
+  username: testuser
+  password: testpass
+  host: localhost
   
 production:
   <<: *default
   adapter: postgresql
   database: db/production.postgresql
-  username: bedbkxosndnppp
-  password: eAg2OyZ5PaE5ft7AnYbVe0evGR
-#  host: ec2-54-197-241-79.compute-1.amazonaws.com
+  username: testuser
+  password: testpass
+  host: localhost
