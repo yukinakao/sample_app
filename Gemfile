@@ -87,6 +87,7 @@ gem 'rb-readline'
 group :test do
 	gem 'selenium-webdriver'
 	gem 'capybara'
+	gem 'sqlite3'
 end
 
 
