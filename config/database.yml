@@ -9,7 +9,7 @@ development:
   database: db/development.postgresql
   username: bedbkxosndnppp
   password: eAg2OyZ5PaE5ft7AnYbVe0evGR
-  host: ec2-54-197-241-79.compute-1.amazonaws.com
+#  host: ec2-54-197-241-79.compute-1.amazonaws.com
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -21,7 +21,7 @@ test:
   database: db/test.postgresql
   username: bedbkxosndnppp
   password: eAg2OyZ5PaE5ft7AnYbVe0evGR
-  host: ec2-54-197-241-79.compute-1.amazonaws.com
+#  host: ec2-54-197-241-79.compute-1.amazonaws.com
   
 production:
   <<: *default
@@ -29,4 +29,4 @@ production:
   database: db/production.postgresql
   username: bedbkxosndnppp
   password: eAg2OyZ5PaE5ft7AnYbVe0evGR
-  host: ec2-54-197-241-79.compute-1.amazonaws.com
+#  host: ec2-54-197-241-79.compute-1.amazonaws.com
