@@ -7,8 +7,8 @@ development:
   <<: *default
   adapter: postgresql
   database: db/development.postgresql
-  username: testuser
-  password: testpass
+  username: y-nakao
+  password: cocoro
   host: localhost
 
 # Warning: The database defined as "test" will be erased and
@@ -19,14 +19,14 @@ test:
   <<: *default
   adapter: postgresql
   database: db/test.postgresql
-  username: testuser
-  password: testpass
+  username: y-nakao
+  password: cocoro
   host: localhost
   
 production:
   <<: *default
   adapter: postgresql
   database: db/production.postgresql
-  username: testuser
-  password: testpass
+  username: y-nakao
+  password: cocoro
   host: localhost

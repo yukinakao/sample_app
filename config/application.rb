@@ -33,6 +33,6 @@ module SampleApp
   end
 end
 
-config.middleware.insert_before ActiveRecord::ConnectionAdapters::ConnectionManagement, ActionDispatch::Rescue do
-    rescue_from PG::ConnectionBad, DatabaseFailure
-end
+#config.middleware.insert_before ActiveRecord::ConnectionAdapters::ConnectionManagement, ActionDispatch::Rescue do
+#    rescue_from PG::ConnectionBad, DatabaseFailure
+#end
