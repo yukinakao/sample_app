@@ -7,6 +7,8 @@ development:
   <<: *default
   adapter: postgresql
   database: db/development.postgresql
+  username: yukinakao
+  password: 24yuki15g
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -16,7 +18,9 @@ test:
   <<: *default
   adapter: postgresql
   database: db/test.postgresql
-
+  username: yukinakao
+  password: 24yuki15g
+  
 production:
   <<: *default
   adapter: postgresql
