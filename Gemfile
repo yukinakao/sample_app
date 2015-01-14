@@ -9,7 +9,7 @@ gem 'rails', '4.2.0'
 # +gem 'sqlite3', groups: %w(test development),require :false
 # +gem 'pg', groups: %w(production),require: false
 group :development do
-	gem 'sqlite3
+	gem 'sqlite3'
 end
 
 # Use SCSS for stylesheets
