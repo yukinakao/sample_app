@@ -8,9 +8,9 @@ gem 'rails', '4.2.0'
 # -gem 'sqlite3'
 # +gem 'sqlite3', groups: %w(test development),require :false
 # +gem 'pg', groups: %w(production),require: false
-group :development do
-	#gem 'sqlite3'
-	gem 'pg'
+group :development, :test do
+	gem 'sqlite3'
+	#gem 'pg'
 end
 
 # Use SCSS for stylesheets
@@ -88,8 +88,6 @@ gem 'rb-readline'
 group :test do
 	gem 'selenium-webdriver'
 	gem 'capybara'
-	#gem 'sqlite3'
-	gem 'pg'
 end
 
 
