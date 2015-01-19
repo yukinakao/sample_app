@@ -8,7 +8,7 @@ development:
   adapter: postgresql
   database: db/development.postgresql
   username: postgres
-  password: 
+  password: postgrespass
   host: localhost
 
 # Warning: The database defined as "test" will be erased and
@@ -20,7 +20,7 @@ test:
   adapter: postgresql
   database: db/test.postgresql
   username: postgres
-  password: 
+  password: postgrespass
   host: localhost
   
 production:
@@ -28,5 +28,5 @@ production:
   adapter: postgresql
   database: db/production.postgresql
   username: postgres
-  password: 
+  password: postgrespass
   host: localhost
