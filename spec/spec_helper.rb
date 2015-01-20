@@ -87,6 +87,8 @@ RSpec.configure do |config|
   Kernel.srand config.seed
 =end
 
-  config.include capybara::DSL
-
+  config.include Capybara::DSL
+  ENV['RAILS_ENV'] = 'test'
+  require File.expand_path('../../config/environment', __FILE__)
+  require 'rspec/rails'
 end
