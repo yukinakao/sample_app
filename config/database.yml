@@ -6,7 +6,7 @@ default: &default
 development:
   <<: *default
   adapter: postgresql
-  database: db/development.postgresql
+  database: postgres
   username: postgres
   password: postgrespass
   host: localhost
@@ -18,7 +18,7 @@ development:
 test:
   <<: *default
   adapter: postgresql
-  database: db/test.postgresql
+  database: postgres
   username: postgres
   password: postgrespass
   host: localhost
@@ -26,7 +26,7 @@ test:
 production:
   <<: *default
   adapter: postgresql
-  database: db/production.postgresql
+  database: postgres
   username: postgres
   password: postgrespass
   host: localhost
