@@ -1,29 +1,18 @@
-<!DOCTYPE html>
-<html>
+<% provide(:title, 'Home') %>
 
-	<head>
-	
-		<title>Ruby on Rails Tutorial Sample App | Home</title>
-		
-	</head>
-	
-	
-	
-	<body>
-	
-		<h1>Sample App</h1>
-		
-		<p>	This is the home page for the
-			<a href="http://railstutorial.jp/">Ruby on Rails Tutorial</a>
-    		sample application.
-    	</p>
-    	
-    	<p>	このページは spec/requests/static_pages_spec.rb によって以下の条件が指定されています。<br>
-    		<ul>	<li>content に「Sample App」が含まれる</li>
-    				<li>title に「Ruby on Rails Tutorial Sample App | Home」が含まれる</li>
-    		</ul>
-    	</p>
-    	
-	</body>
+<h1>Sample App</h1>
 
-</html>
+<p>	This is the home page for the
+	<a href="http://railstutorial.jp/">Ruby on Rails Tutorial</a>
+	sample application.
+</p>
+
+<p>	このページは spec/requests/static_pages_spec.rb によって以下の条件が指定されています。<br>
+	<ul>	<li>content に「Sample App」が含まれる</li>
+			<li>title に「Ruby on Rails Tutorial Sample App | Home」が含まれる</li>
+	</ul>
+</p>
+
+<p>	このページは app/views/layouts/application.html.erb によってレイアウトが指定されています。<br>
+	したがって、内部のコンテンツのみ記述されています。
+</p>
