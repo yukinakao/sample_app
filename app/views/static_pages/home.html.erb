@@ -1,4 +1,4 @@
-<% provide(:title, 'Home') %>
+<%# provide(:title, 'Home') %>
 
 <h1>Sample App</h1>
 
@@ -9,7 +9,8 @@
 
 <p>	このページは spec/requests/static_pages_spec.rb によって以下の条件が指定されています。<br>
 	<ul>	<li>content に「Sample App」が含まれる</li>
-			<li>title に「Ruby on Rails Tutorial Sample App | Home」が含まれる</li>
+			<li><del>title に「Ruby on Rails Tutorial Sample App | Home」が含まれる</del></li>
+			<li>↑ app/helpers/application_helper.rbにて「ページタイトルが定義されていない場合には基本タイトルを返す」と設定した上でこのページのタイトルをコメントアウトしたので、タイトルは「<%= full_title(yield(:title)) %>」となる</li>
 	</ul>
 </p>
 

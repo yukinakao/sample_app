@@ -36,11 +36,11 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 
 # bundle exec rake doc:rails generates the API under doc/api.
-gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'sdoc', group: :doc
 
-#group :doc do
-#	gem 'sdoc', '0.3.20', require: false
-#end
+group :doc do
+	#gem 'sdoc', require: false
+end
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -60,6 +60,12 @@ group :development, :test do
   
   # Add script for SAMPLE_APP
   gem 'rspec-rails'
+  gem 'guard'
+  gem 'guard-rspec'
+  gem 'spork-rails'
+  gem 'guard-spork'
+  gem 'childprocess'
+  
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
