@@ -1,19 +1,30 @@
 <%# provide(:title, 'Home') %>
 
-<h1>Sample App</h1>
-
-<p>	This is the home page for the
-	<a href="http://railstutorial.jp/">Ruby on Rails Tutorial</a>
-	sample application.
-</p>
-
-<p>	このページは spec/requests/static_pages_spec.rb によって以下の条件が指定されています。<br>
-	<ul>	<li>content に「Sample App」が含まれる</li>
+<div class="center hero-unit">
+	
+	<h1>Sample App</h1>
+	
+	<h2>	This is the home page for the
+		<a href="http://railstutorial.jp/">Ruby on Rails Tutorial</a>
+		sample application.
+	</h2>
+	
+	<p>
+		このページは spec/requests/static_pages_spec.rb によって以下の条件が指定されています。<br>
+		<ul>
+			<li>content に「Sample App」が含まれる</li>
 			<li><del>title に「Ruby on Rails Tutorial Sample App | Home」が含まれる</del></li>
 			<li>↑ app/helpers/application_helper.rbにて「ページタイトルが定義されていない場合には基本タイトルを返す」と設定した上でこのページのタイトルをコメントアウトしたので、タイトルは「<%= full_title(yield(:title)) %>」となる</li>
-	</ul>
-</p>
+		</ul>
+	</p>
+	
+	<p>
+		このページは app/views/layouts/application.html.erb によってレイアウトが指定されています。<br>
+		したがって、内部のコンテンツのみ記述されています。
+	</p>
+	
+	<%= link_to "Sign up now!", '#', class: "btn btn-large btn-primary" %>
+	
+</div>
 
-<p>	このページは app/views/layouts/application.html.erb によってレイアウトが指定されています。<br>
-	したがって、内部のコンテンツのみ記述されています。
-</p>
+<%= link_to image_tag("rails.png", alt: "Rails"), 'http://rubyonrails.org/' %>
